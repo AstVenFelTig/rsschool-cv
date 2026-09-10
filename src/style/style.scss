@@ -189,6 +189,38 @@ body {
                     }
                 }
             }
+            .skills {
+                scroll-margin-top: 3.125rem;
+                margin-bottom: 6.25rem;
+                @media (max-width: 750px) {
+                    margin-bottom: 5rem;
+                }
+                @media (max-width: 540px) {
+                    margin-bottom: 3.125rem;
+                }
+                .skills__box {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid: 0.625rem;
+                    @media (max-width: 600px) {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                    @media (max-width: 480px) {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .skills__item {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 20px 0px;
+                        .skills__img {
+                            margin-bottom: 1.5625rem;
+                            max-width: 100px;
+                        }
+                    }
+                }
+            }
         }
     }
     .footer {
