@@ -1,1 +1,82 @@
 @use "./normal.scss";
+
+body {
+    font-family: "Lora", sans-serif;
+    font-size: 1.125rem;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.527), rgba(255, 255, 255, 0.411)),
+        url(../assets/img/main/main9.jpg) no-repeat center center / cover;
+    @media (max-width: 680px) {
+        font-size: 0.875rem;
+    }
+    @media (max-width: 560px) {
+        font-size: 0.75rem;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.822);
+        .container {
+            .nav {
+                .list {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0.625rem 0rem;
+                    li {
+                        .link {
+                            display: inline-block;
+                            font-family: "PlayfairDisplay", sans-serif;
+                            font-weight: 600;
+                            color: #051427f8;
+                            color: #525050f3;
+                            transition: all 0.5s ease;
+                            &:hover {
+                                transform: scale(1.5);
+                                color: #00040af8;
+                                filter: drop-shadow(5px 5px 3px rgba(3, 3, 32, 0.7));
+                            }
+                        }
+                        .nav__transl {
+                            appearance: none;
+                            border: none;
+                            background-color: transparent;
+                            font-size: 1.125rem;
+                            font-family: "Lora", sans-serif;
+                            cursor: pointer;
+                            transition: all 0.5s ease;
+                            color: #525050f3;
+                            @media (max-width: 680px) {
+                                font-size: 0.875rem;
+                            }
+                            @media (max-width: 560px) {
+                                font-size: 0.75rem;
+                            }
+                            &:focus {
+                                outline: none;
+                                border-color: transparent;
+                            }
+                            &:hover {
+                                color: #00040af8;
+                                filter: drop-shadow(5px 5px 3px rgba(3, 3, 32, 0.7));
+                            }
+                            option {
+                                font-size: 1.125rem;
+                                font-family: "Lora", sans-serif;
+                                @media (max-width: 680px) {
+                                    font-size: 0.875rem;
+                                }
+                                @media (max-width: 560px) {
+                                    font-size: 0.75rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
