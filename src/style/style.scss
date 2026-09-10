@@ -221,6 +221,63 @@ body {
                     }
                 }
             }
+            .code {
+                scroll-margin-top: 3.125rem;
+                margin-bottom: 6.25rem;
+                @media (max-width: 750px) {
+                    margin-bottom: 5rem;
+                }
+                @media (max-width: 540px) {
+                    margin-bottom: 3.125rem;
+                }
+                .code__box {
+                    padding: 6.25rem 0rem;
+                    position: relative;
+                    border-radius: 1.25rem;
+                    overflow: hidden;
+
+                    .code__video {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 1;
+                        object-fit: cover;
+                        opacity: 0.5;
+                        width: 100%;
+                        height: 100%;
+
+                        video {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .code__precode {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        z-index: 5;
+                        transform: translate(-50%, -50%);
+
+                        .code__my-code {
+                            font-size: 1.5rem;
+                            color: #ffffff;
+                            @media (max-width: 850px) {
+                                font-size: 1rem;
+                            }
+                            @media (max-width: 590px) {
+                                font-size: 0.8rem;
+                            }
+                            @media (max-width: 590px) {
+                                font-size: 0.7rem;
+                            }
+                            @media (max-width: 435px) {
+                                font-size: 0.6rem;
+                            }
+                        }
+                    }
+                }
+            }
             .projects {
                 scroll-margin-top: 3.125rem;
                 margin-bottom: 6.25rem;

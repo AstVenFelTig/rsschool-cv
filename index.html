@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rsschool-cv</title>
     <link rel="shortcut icon" href="./src/assets/favicon.png" type="image/x-icon">
-    <script defer type="module" src="./main.js"></script>
 </head>
 
 <body>
@@ -114,6 +113,17 @@
                 <section class="code" id="code">
                     <h2 class="title code__title">Code</h2>
                     <div class="code__box">
+                        <div class="code__video">
+                            <video autoplay muted src="./src/assets/media/mixkit.mp4"></video>
+                        </div>
+                        <pre class="code__precode">
+                            <code class="code__my-code">
+function getSumOfNumbers(x1, x2, x3) {
+  const arr = [x1, x2, x3];
+  const sum = arr.reduce((total, num) => total + num, 0);
+  return Number.isInteger(sum) ? sum : sum.toFixed(1);}
+                            </code>
+                        </pre>
                     </div>
                 </section>
                 <section class="projects" id="projects">
@@ -213,7 +223,7 @@
 
                         </li>
                         <li class="contact__item">
-                            <a href="https://rs.school/courses/javascript-ru" target="_blank">
+                            <a href="https://rs.school/courses/javascript" target="_blank">
                                 <img class="contact__img" src="#" alt="logo">
                             </a>
                         </li>
@@ -225,6 +235,7 @@
             </div>
         </footer>
     </div>
+    <script type="module" src="./main.js"></script>
 </body>
 
 </html>
