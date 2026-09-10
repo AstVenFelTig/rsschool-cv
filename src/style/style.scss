@@ -115,6 +115,80 @@ body {
                     }
                 }
             }
+            .about-me {
+                scroll-margin-top: 3.125rem;
+                margin-bottom: 6.25rem;
+                @media (max-width: 750px) {
+                    margin-bottom: 5rem;
+                }
+                @media (max-width: 540px) {
+                    margin-bottom: 3.125rem;
+                }
+                .about-me__title {
+                    @media (max-width: 640px) {
+                        margin-bottom: 0;
+                    }
+                }
+                .about-me__box {
+                    position: relative;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    flex-direction: row-reverse;
+                    overflow: hidden;
+                    .about-me__text {
+                        position: relative;
+                        z-index: 100;
+                        @media (max-width: 680px) {
+                            position: absolute;
+                        }
+                        p {
+                            text-align: justify;
+                            text-indent: 10px;
+                            margin-bottom: 0.9375rem;
+                            font-size: 1.5625rem;
+                            line-height: 1.5;
+                            color: #e0dada;
+                            text-shadow: 6px 4px 4px rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                    .about-me-img {
+                        flex: 0 0 50%;
+
+                        .about-me__photo {
+                            max-width: 15.625rem;
+                            object-fit: cover;
+                            transition: all 0.5 ease;
+
+                            &:nth-of-type(1) {
+                                position: relative;
+                                transform: rotate(25deg) translate(1.875rem, 0rem);
+                                z-index: 2;
+                                @media (max-width: 680px) {
+                                    transform: rotate(25deg) translate(0rem, 7rem);
+                                }
+                            }
+                            &:nth-of-type(2) {
+                                position: relative;
+                                z-index: 5;
+                                transform: rotate(-25deg) translate(-3.125rem, 3.125rem);
+                            }
+                            &:nth-of-type(3) {
+                                position: relative;
+                                transform: rotate(25deg) translate(80px, -80px);
+                            }
+                            &:nth-of-type(4) {
+                                position: relative;
+                                transform: rotate(-25deg) translate(120px, -40px);
+                            }
+                            &:hover {
+                                cursor: pointer;
+                                z-index: 100;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     .footer {
