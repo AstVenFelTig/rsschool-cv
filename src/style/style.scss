@@ -283,6 +283,51 @@ body {
                     }
                 }
             }
+            .education {
+                margin-bottom: 6.25rem;
+                scroll-margin-top: 3.125rem;
+                background: url(../assets/img/education/yale-university-0.jpg) no-repeat center center / cover;
+                @media (max-width: 750px) {
+                    margin-bottom: 5rem;
+                }
+                @media (max-width: 540px) {
+                    margin-bottom: 3.125rem;
+                }
+                .education__title {
+                    padding-top: 3rem;
+                }
+                .education__table {
+                    width: 100%;
+                    margin-bottom: 1.875rem;
+                    padding: 3rem 3rem;
+                    thead {
+                        text-align: center;
+                        tr {
+                            background-color: #d9e0e97e;
+                            th {
+                                font-size: 2rem;
+                                font-weight: 700;
+                                color: #050505f8;
+                                padding: 10px 0px;
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            background-color: #d9e0e97e;
+                            td {
+                                font-weight: 500;
+                                padding: 10px 15px;
+                                color: #000000;
+                                font-size: 1.5rem;
+                            }
+                        }
+                        .education__year {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
         }
     }
     .footer {
