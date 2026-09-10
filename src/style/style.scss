@@ -79,6 +79,44 @@ body {
             }
         }
     }
+    .main {
+        .container {
+            .hero {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 6.25rem 0rem;
+                @media (max-width: 800px) {
+                    flex-direction: column;
+                    flex-direction: column-reverse;
+                }
+                .hero__text {
+                    h1 {
+                        color: #051427f8;
+                        font-size: 3rem;
+                        font-weight: normal;
+                        margin-bottom: 1.25rem;
+                    }
+                    p {
+                        color: #051427f8;
+                        font-size: 1.25rem;
+                    }
+                }
+                .hero__img {
+                    img {
+                        border-radius: 11.25rem;
+                        max-width: 25rem;
+                        @media (max-width: 740px) {
+                            margin-bottom: 3rem;
+                        }
+                        @media (max-width: 450px) {
+                            max-width: 20rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .footer {
         .container {
             .contact {
